@@ -65,7 +65,7 @@ US_states =
 
 
 
-puts US_states.sort
+puts US_states.sort { |item1, item2| item2 <=> item1 }
 
   US_states.each {|key,value|
   num = key.length-1
